@@ -19,10 +19,12 @@
 	};
 	
 	$.backstretch("/images/sea2.jpg");
-	$.backstretch("/images/stencil2_1200x768.png");
+	//$.backstretch("/images/stencil2_1200x768.png");
 	
 	$(document.body).on("mousemove",parallax);
 	$(document.body).trigger("mousemove");	
+
+	$("#github .commits").github();
 	
 	//TODO: Add Google Analytics	
 	

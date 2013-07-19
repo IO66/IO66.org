@@ -8,8 +8,17 @@ a:hover { color:#eee; text-decoration:none; font-weight: bold; }
 a:visited { color:#eee; }
 img{ border:0px; }
 
+#border { position:fixed; z-index:-1; }
+#border > div { position:fixed; margin:0; padding:0; z-index:-1; background-color: #333333;}
+#top { top:0px; left:0px; width:100%; min-height: 70px; height: 70px; }
+#left { top:0px; left:0px; width:70px; min-height: 100%; height: 100%; }
+#right { top:0px; right:0px; width:70px; min-height: 100%; height: 100%; }
+#bottom { bottom:0px; left:0px; width:100%; min-height: 70px; height: 70px; }
+
 /*menu*/
 #header  { background-color:#333333; }
+.logo	 { float:left; }
+.menu	 { float:left; }
 .menu > li { float:left; color:#ddd; margin-right:50px; min-width:200px; width:200px; }
 .menu > li > h1 { margin:0px; }
 .menu > li > h2 { margin:0px; }
@@ -17,5 +26,7 @@ img{ border:0px; }
 
 
 /*meat*/
-.content { clear:both; display:block; margin-left:245px; max-width:865px; border:5px solid #333333;}
-.info { background-color: #b6c6d6; border:1px solid #ffffff; padding: 20px; }
+.dashboard { clear:both; display:block; margin-left:70px; }
+.widget  { float:left; margin:20px; border:5px solid #b6c6d6; color:#ffffff; }
+.content { width:400px; height:300px; border:1px solid #ffffff; background-color: rgba(50,50,50,0.6); padding-left: 20px; padding-right: 20px; -moz-transition:background-color 1s; -webkit-transition:background-color 1s; -o-transition:background-color 1s;transition:background-color 1s; }
+.content:hover { background-color: rgba(50,50,50,1.0); }

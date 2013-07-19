@@ -2,7 +2,29 @@ extends layout
 
 block content
 
-	section.content
-		article.info
-			h3 Welcome to IO66
-			p We are a passionate community of coders who live in the coastal East Sussex area, looking to organize meetups, talks, and hacks - mostly related to web technology.
+	section.dashboard
+		article.widget
+			.content
+				h3 Welcome to IO66
+				p We are a passionate community of coders who live in the coastal East Sussex area, looking to organize meetups, talks, and hacks - mostly related to web technology.
+
+		article.widget#github
+			.content
+				h3 Git Commits
+				ul.commits
+
+		article.widget#twitter
+			.content
+				h3 Tweets
+				ul
+					li 1 Lorem ipsum
+					li 2 Lorem ipsum
+					li 3 Lorem ipsum
+
+		article.widget#events
+			.content
+				h3 Events
+				ul
+					li 1 Lorem ipsum
+					li 2 Lorem ipsum
+					li 3 Lorem ipsum

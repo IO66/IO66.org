@@ -1,5 +1,5 @@
 /*css reset and element defaults*/
-body { font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant: normal; background-color: #b6c6d6; color:#333333; }
+body { font-family: Helvetica, Arial, sans-serif; font-style: normal; font-variant: normal; background-color: #b6c6d6; color:#333333; margin:0px; padding:0px; }
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 ul { list-style-type:none; padding:0; margin-left:0; }
 ol { list-style-type:decimal; padding:0; margin-left:0; }
@@ -16,17 +16,16 @@ img{ border:0px; }
 #bottom { bottom:0px; left:0px; width:100%; min-height: 70px; height: 70px; }
 
 /*menu*/
-#header  { background-color:#333333; }
-.logo	 { float:left; }
-.menu	 { float:left; }
-.menu > li { float:left; color:#ddd; margin-right:50px; min-width:200px; width:200px; }
+.nav  { float:left; background-color:#333333; min-height:3000px; width:180px; margin:0px; border-left:5px solid #ff6813; padding:0px; margin-right:10px;}
+.menu > li { color:#ddd; min-width:200px; width:200px; margin-left:20px; margin-top:25px; }
 .menu > li > h1 { margin:0px; }
 .menu > li > h2 { margin:0px; }
 .menu > li > h1 > a { text-decoration:none; font-size:32px; margin-top:0px;}
-
+.menu > .logo { margin:5px; }
 
 /*meat*/
-.dashboard { clear:both; display:block; margin-left:70px; }
-.widget  { float:left; margin:20px; border:5px solid #b6c6d6; color:#ffffff; }
+.dashboard { width:100%; }
+.widget  { float:left; margin:10px; border:5px solid #b6c6d6; color:#ffffff; }
 .content { width:400px; height:300px; border:1px solid #ffffff; background-color: rgba(50,50,50,0.6); padding-left: 20px; padding-right: 20px; -moz-transition:background-color 1s; -webkit-transition:background-color 1s; -o-transition:background-color 1s;transition:background-color 1s; }
 .content:hover { background-color: rgba(50,50,50,1.0); }
+.list > li > a { font-size:11px; }
